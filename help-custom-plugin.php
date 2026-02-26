@@ -24,4 +24,7 @@ require_once __DIR__ . '/includes/class-sync-manager.php';
  */
 add_action('plugins_loaded', function () {
     // wp_die('Plugin is loaded!');
+    $testing_class = new Sync_Manager();
+
+    $testing_class->check_for_sync_trigger();
 });
